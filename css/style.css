@@ -1,0 +1,45 @@
+/* Polices */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* Composants */
+@import url("components/container.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+@import url("components/form.css");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --snap-yellow: #fffc00;
+  --snap-black: #000000;
+  --snap-grey: #f7f7f7;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: var(--snap-black);
+  background: linear-gradient(135deg, #fffc00 0%, #fff9c4 25%, #f7f7f7 60%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}

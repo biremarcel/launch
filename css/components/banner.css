@@ -1,0 +1,29 @@
+.banner {
+  background-image: url("../../images/Fond-banniere-snap.png");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.banner-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  margin-top: -80px;
+  position: relative;
+}
+
+.banner-card h1 {
+  color: var(--snap-black);
+  font-size: 40px;
+  margin: 0 0 10px;
+}
+
+.banner-card h2 {
+  color: #555;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}

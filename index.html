@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SnapStreak Helper</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="banner"></div>
+
+    <div class="container">
+
+      <div class="banner-card">
+        <h1>SnapStreak Helper 👻</h1>
+        <h2>Remplis tes infos une fois, copie-les en un clic pour chaque streak perdue.</h2>
+      </div>
+
+      <div class="card">
+        <h3>Tes informations</h3>
+
+        <div class="fields-grid">
+          <div class="field">
+            <label for="username">Ton nom d'utilisateur</label>
+            <div class="field-row">
+              <input type="text" id="username" placeholder="ton_pseudo">
+              <button class="btn-copy" data-target="username">Copier</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Ton email</label>
+            <div class="field-row">
+              <input type="email" id="email" placeholder="toi@email.com">
+              <button class="btn-copy" data-target="email">Copier</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="phone">Ton numéro de téléphone</label>
+            <div class="field-row">
+              <input type="tel" id="phone" placeholder="06 12 34 56 78">
+              <button class="btn-copy" data-target="phone">Copier</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="friend">Nom d'utilisateur de l'ami</label>
+            <div class="field-row">
+              <input type="text" id="friend" placeholder="pseudo_de_l_ami">
+              <button class="btn-copy" data-target="friend">Copier</button>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="center">
+          <a href="https://help.snapchat.com" target="_blank" class="btn-primary">
+            Ouvrir le support Snapchat
+          </a>
+        </div>
+
+        <p class="help-text">
+          Snapchat n'accepte qu'un seul ami par envoi. Garde cette page ouverte,
+          colle tes infos dans le formulaire, puis change juste le pseudo de l'ami
+          pour la streak suivante.
+        </p>
+      </div>
+
+      <div class="card center">
+        <h3>Ton avis compte </h3>
+        <a href="https://form.typeform.com/to/I2bfqRPo" target="_blank" class="btn-primary">
+          Donner mon avis
+        </a>
+      </div>
+
+    </div>
+
+    <script src="js/copy.js"></script>
+  </body>
+</html>

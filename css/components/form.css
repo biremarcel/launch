@@ -1,0 +1,84 @@
+.card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+  margin: 24px auto 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* La grille : 2 colonnes égales pour les champs */
+.fields-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.field {
+  margin-bottom: 0;
+}
+
+.field label {
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.field-row {
+  display: flex;
+  gap: 8px;
+}
+
+.field-row input {
+  flex: 1;
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-family: inherit;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.field-row input:focus {
+  outline: none;
+  border-color: var(--snap-black);
+}
+
+.btn-copy {
+  background-color: var(--snap-black);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0 18px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.btn-copy:hover {
+  background-color: #333;
+}
+
+.btn-copy.copied {
+  background-color: #2ecc71;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 28px 0;
+}
+
+.help-text {
+  font-size: 14px;
+  color: #777;
+  margin: 24px 0 0;
+}
+
+/* Sur mobile : une seule colonne */
+@media (max-width: 600px) {
+  .fields-grid {
+    grid-template-columns: 1fr;
+  }
+}
